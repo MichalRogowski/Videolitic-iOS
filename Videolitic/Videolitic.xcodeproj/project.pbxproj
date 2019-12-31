@@ -7,13 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821E383523919351005A28C7 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821E383423919351005A28C7 /* SpeechRecognizer.swift */; };
+		821E383923919527005A28C7 /* MockSpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821E383823919527005A28C7 /* MockSpeechRecognizer.swift */; };
+		821E383D239196E2005A28C7 /* UnitTestErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821E383C239196E2005A28C7 /* UnitTestErrors.swift */; };
+		828427F42392ED89008E02F6 /* VideoReaderTestsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828427F32392ED89008E02F6 /* VideoReaderTestsIntegration.swift */; };
+		828427F82392FF55008E02F6 /* Participiant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828427F72392FF55008E02F6 /* Participiant.swift */; };
+		828428042393006E008E02F6 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828427FB2393006E008E02F6 /* Math.swift */; };
+		828428052393006E008E02F6 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828427FC2393006E008E02F6 /* UIImage+CVPixelBuffer.swift */; };
+		828428062393006E008E02F6 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828427FD2393006E008E02F6 /* Array.swift */; };
+		828428072393006E008E02F6 /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828427FE2393006E008E02F6 /* Predictions.swift */; };
+		828428082393006E008E02F6 /* MultiArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828427FF2393006E008E02F6 /* MultiArray.swift */; };
+		828428092393006E008E02F6 /* CVPixelBuffer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828428002393006E008E02F6 /* CVPixelBuffer+Helpers.swift */; };
+		8284280A2393006E008E02F6 /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828428012393006E008E02F6 /* NonMaxSuppression.swift */; };
+		8284280B2393006E008E02F6 /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828428022393006E008E02F6 /* MLMultiArray+Image.swift */; };
+		8284280C2393006E008E02F6 /* FaceCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828428032393006E008E02F6 /* FaceCropper.swift */; };
+		8284281423930C3F008E02F6 /* RaceModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8284280E23930C3F008E02F6 /* RaceModel.mlmodel */; };
+		8284281523930C3F008E02F6 /* TextPosNegClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8284280F23930C3F008E02F6 /* TextPosNegClassifier.mlmodel */; };
+		8284281623930C3F008E02F6 /* AgeModelUTK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8284281023930C3F008E02F6 /* AgeModelUTK.mlmodel */; };
+		8284281723930C3F008E02F6 /* RaceModel2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8284281123930C3F008E02F6 /* RaceModel2.mlmodel */; };
+		8284281823930C3F008E02F6 /* CNNEmotions.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8284281223930C3F008E02F6 /* CNNEmotions.mlmodel */; };
+		8284281923930C3F008E02F6 /* GenderNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8284281323930C3F008E02F6 /* GenderNet.mlmodel */; };
+		8284281B2393251F008E02F6 /* IMG_5441.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8284281A2393251F008E02F6 /* IMG_5441.mov */; };
 		82B1CEEA23818C9C0022DDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1CEE923818C9C0022DDB2 /* AppDelegate.swift */; };
 		82B1CEEC23818C9C0022DDB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1CEEB23818C9C0022DDB2 /* SceneDelegate.swift */; };
 		82B1CEEE23818C9C0022DDB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1CEED23818C9C0022DDB2 /* ContentView.swift */; };
 		82B1CEF023818C9F0022DDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B1CEEF23818C9F0022DDB2 /* Assets.xcassets */; };
 		82B1CEF323818C9F0022DDB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B1CEF223818C9F0022DDB2 /* Preview Assets.xcassets */; };
 		82B1CEF623818C9F0022DDB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B1CEF423818C9F0022DDB2 /* LaunchScreen.storyboard */; };
-		82B1CF0123818C9F0022DDB2 /* VideoliticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1CF0023818C9F0022DDB2 /* VideoliticTests.swift */; };
+		82B1CF0E2381E6F70022DDB2 /* AudioProcessorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1CF0D2381E6F70022DDB2 /* AudioProcessorService.swift */; };
+		82B1CF10238F17BF0022DDB2 /* AudioProcessorServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1CF0F238F17BF0022DDB2 /* AudioProcessorServiceTests.swift */; };
+		82B1CF1523917C5E0022DDB2 /* Bobrowiecka.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 82B1CF1423917C5E0022DDB2 /* Bobrowiecka.m4a */; };
+		82F70C38239197CB003488AF /* URL+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F70C37239197CB003488AF /* URL+Resources.swift */; };
+		82F70C3A23919AFA003488AF /* SpeechRecognitionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F70C3923919AFA003488AF /* SpeechRecognitionResult.swift */; };
+		82F70C3C23919B82003488AF /* MockSpeechRecognitionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F70C3B23919B82003488AF /* MockSpeechRecognitionResult.swift */; };
+		82F70C422391A965003488AF /* VideoProcessorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F70C412391A965003488AF /* VideoProcessorService.swift */; };
+		82F70C4523924F86003488AF /* VideoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F70C4423924F86003488AF /* VideoReader.swift */; };
+		82F70C4A2392B16A003488AF /* VideoliticError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F70C492392B16A003488AF /* VideoliticError.swift */; };
+		82F70C4C2392B4D7003488AF /* trump_clintoon.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82F70C4B2392B4D7003488AF /* trump_clintoon.mov */; };
+		82F70C522392B8B5003488AF /* AudioProcessorServiceTestsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F70C512392B8B5003488AF /* AudioProcessorServiceTestsIntegration.swift */; };
+		82F70C542392BA8B003488AF /* FileManager+ClearTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F70C532392BA8B003488AF /* FileManager+ClearTemp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +59,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		821E383423919351005A28C7 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		821E383823919527005A28C7 /* MockSpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeechRecognizer.swift; sourceTree = "<group>"; };
+		821E383C239196E2005A28C7 /* UnitTestErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestErrors.swift; sourceTree = "<group>"; };
+		828427F32392ED89008E02F6 /* VideoReaderTestsIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoReaderTestsIntegration.swift; sourceTree = "<group>"; };
+		828427F72392FF55008E02F6 /* Participiant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participiant.swift; sourceTree = "<group>"; };
+		828427FB2393006E008E02F6 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		828427FC2393006E008E02F6 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		828427FD2393006E008E02F6 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		828427FE2393006E008E02F6 /* Predictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
+		828427FF2393006E008E02F6 /* MultiArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiArray.swift; sourceTree = "<group>"; };
+		828428002393006E008E02F6 /* CVPixelBuffer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helpers.swift"; sourceTree = "<group>"; };
+		828428012393006E008E02F6 /* NonMaxSuppression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
+		828428022393006E008E02F6 /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
+		828428032393006E008E02F6 /* FaceCropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceCropper.swift; sourceTree = "<group>"; };
+		8284280E23930C3F008E02F6 /* RaceModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RaceModel.mlmodel; sourceTree = "<group>"; };
+		8284280F23930C3F008E02F6 /* TextPosNegClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextPosNegClassifier.mlmodel; sourceTree = "<group>"; };
+		8284281023930C3F008E02F6 /* AgeModelUTK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeModelUTK.mlmodel; sourceTree = "<group>"; };
+		8284281123930C3F008E02F6 /* RaceModel2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RaceModel2.mlmodel; sourceTree = "<group>"; };
+		8284281223930C3F008E02F6 /* CNNEmotions.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CNNEmotions.mlmodel; sourceTree = "<group>"; };
+		8284281323930C3F008E02F6 /* GenderNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderNet.mlmodel; sourceTree = "<group>"; };
+		8284281A2393251F008E02F6 /* IMG_5441.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_5441.mov; sourceTree = "<group>"; };
 		82B1CEE623818C9C0022DDB2 /* Videolitic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Videolitic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B1CEE923818C9C0022DDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82B1CEEB23818C9C0022DDB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +89,20 @@
 		82B1CEF523818C9F0022DDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82B1CEF723818C9F0022DDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82B1CEFC23818C9F0022DDB2 /* VideoliticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoliticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82B1CF0023818C9F0022DDB2 /* VideoliticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoliticTests.swift; sourceTree = "<group>"; };
 		82B1CF0223818C9F0022DDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82B1CF0D2381E6F70022DDB2 /* AudioProcessorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProcessorService.swift; sourceTree = "<group>"; };
+		82B1CF0F238F17BF0022DDB2 /* AudioProcessorServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProcessorServiceTests.swift; sourceTree = "<group>"; };
+		82B1CF1423917C5E0022DDB2 /* Bobrowiecka.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bobrowiecka.m4a; sourceTree = "<group>"; };
+		82F70C37239197CB003488AF /* URL+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Resources.swift"; sourceTree = "<group>"; };
+		82F70C3923919AFA003488AF /* SpeechRecognitionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionResult.swift; sourceTree = "<group>"; };
+		82F70C3B23919B82003488AF /* MockSpeechRecognitionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeechRecognitionResult.swift; sourceTree = "<group>"; };
+		82F70C402391A8DC003488AF /* Videolitic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Videolitic.entitlements; sourceTree = "<group>"; };
+		82F70C412391A965003488AF /* VideoProcessorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessorService.swift; sourceTree = "<group>"; };
+		82F70C4423924F86003488AF /* VideoReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoReader.swift; sourceTree = "<group>"; };
+		82F70C492392B16A003488AF /* VideoliticError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoliticError.swift; sourceTree = "<group>"; };
+		82F70C4B2392B4D7003488AF /* trump_clintoon.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = trump_clintoon.mov; sourceTree = "<group>"; };
+		82F70C512392B8B5003488AF /* AudioProcessorServiceTestsIntegration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioProcessorServiceTestsIntegration.swift; sourceTree = "<group>"; };
+		82F70C532392BA8B003488AF /* FileManager+ClearTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+ClearTemp.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +123,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		821E3833239192FA005A28C7 /* AudioProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				82B1CF0D2381E6F70022DDB2 /* AudioProcessorService.swift */,
+				82F70C3923919AFA003488AF /* SpeechRecognitionResult.swift */,
+				821E383423919351005A28C7 /* SpeechRecognizer.swift */,
+			);
+			path = AudioProcessor;
+			sourceTree = "<group>";
+		};
+		821E383623919501005A28C7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				82F70C3B23919B82003488AF /* MockSpeechRecognitionResult.swift */,
+				821E383823919527005A28C7 /* MockSpeechRecognizer.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		821E38372391950E005A28C7 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				82B1CF0C2381E6910022DDB2 /* Services */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		821E383A239196AC005A28C7 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				821E383C239196E2005A28C7 /* UnitTestErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		821E383B239196C0005A28C7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				821E383A239196AC005A28C7 /* Errors */,
+				82F70C36239197BE003488AF /* Helpers */,
+				82F70C4D2392B860003488AF /* IntegrationTests */,
+				821E383623919501005A28C7 /* Mocks */,
+				821E38372391950E005A28C7 /* UnitTests */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		828427F52392FF2E008E02F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				828427F72392FF55008E02F6 /* Participiant.swift */,
+				8284280D23930C3F008E02F6 /* MLModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		828427F92393006E008E02F6 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				828428032393006E008E02F6 /* FaceCropper.swift */,
+				828427FA2393006E008E02F6 /* CoreMLHelpers */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		828427FA2393006E008E02F6 /* CoreMLHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				828427FB2393006E008E02F6 /* Math.swift */,
+				828427FC2393006E008E02F6 /* UIImage+CVPixelBuffer.swift */,
+				828427FD2393006E008E02F6 /* Array.swift */,
+				828427FE2393006E008E02F6 /* Predictions.swift */,
+				828427FF2393006E008E02F6 /* MultiArray.swift */,
+				828428002393006E008E02F6 /* CVPixelBuffer+Helpers.swift */,
+				828428012393006E008E02F6 /* NonMaxSuppression.swift */,
+				828428022393006E008E02F6 /* MLMultiArray+Image.swift */,
+			);
+			path = CoreMLHelpers;
+			sourceTree = "<group>";
+		};
+		8284280D23930C3F008E02F6 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				8284280E23930C3F008E02F6 /* RaceModel.mlmodel */,
+				8284280F23930C3F008E02F6 /* TextPosNegClassifier.mlmodel */,
+				8284281023930C3F008E02F6 /* AgeModelUTK.mlmodel */,
+				8284281123930C3F008E02F6 /* RaceModel2.mlmodel */,
+				8284281223930C3F008E02F6 /* CNNEmotions.mlmodel */,
+				8284281323930C3F008E02F6 /* GenderNet.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
 		82B1CEDD23818C9C0022DDB2 = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +237,10 @@
 		82B1CEE823818C9C0022DDB2 /* Videolitic */ = {
 			isa = PBXGroup;
 			children = (
-				82B1CEE923818C9C0022DDB2 /* AppDelegate.swift */,
-				82B1CEEB23818C9C0022DDB2 /* SceneDelegate.swift */,
-				82B1CEED23818C9C0022DDB2 /* ContentView.swift */,
-				82B1CEEF23818C9F0022DDB2 /* Assets.xcassets */,
-				82B1CEF423818C9F0022DDB2 /* LaunchScreen.storyboard */,
+				82F70C402391A8DC003488AF /* Videolitic.entitlements */,
+				82F70C3F2391A886003488AF /* Resources */,
+				82F70C3E2391A87D003488AF /* Sources */,
 				82B1CEF723818C9F0022DDB2 /* Info.plist */,
-				82B1CEF123818C9F0022DDB2 /* Preview Content */,
 			);
 			path = Videolitic;
 			sourceTree = "<group>";
@@ -101,10 +256,105 @@
 		82B1CEFF23818C9F0022DDB2 /* VideoliticTests */ = {
 			isa = PBXGroup;
 			children = (
-				82B1CF0023818C9F0022DDB2 /* VideoliticTests.swift */,
 				82B1CF0223818C9F0022DDB2 /* Info.plist */,
+				82B1CF13238F1D030022DDB2 /* Resources */,
+				821E383B239196C0005A28C7 /* Sources */,
 			);
 			path = VideoliticTests;
+			sourceTree = "<group>";
+		};
+		82B1CF0B2381E6830022DDB2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				821E3833239192FA005A28C7 /* AudioProcessor */,
+				82F70C3D2391A85D003488AF /* VideoProcessor */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82B1CF0C2381E6910022DDB2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82B1CF0F238F17BF0022DDB2 /* AudioProcessorServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82B1CF13238F1D030022DDB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8284281A2393251F008E02F6 /* IMG_5441.mov */,
+				82F70C4B2392B4D7003488AF /* trump_clintoon.mov */,
+				82B1CF1423917C5E0022DDB2 /* Bobrowiecka.m4a */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82F70C36239197BE003488AF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				82F70C37239197CB003488AF /* URL+Resources.swift */,
+				82F70C532392BA8B003488AF /* FileManager+ClearTemp.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		82F70C3D2391A85D003488AF /* VideoProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				82F70C412391A965003488AF /* VideoProcessorService.swift */,
+				82F70C4423924F86003488AF /* VideoReader.swift */,
+			);
+			path = VideoProcessor;
+			sourceTree = "<group>";
+		};
+		82F70C3E2391A87D003488AF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				82B1CEE923818C9C0022DDB2 /* AppDelegate.swift */,
+				82B1CEED23818C9C0022DDB2 /* ContentView.swift */,
+				82B1CEEB23818C9C0022DDB2 /* SceneDelegate.swift */,
+				82B1CEEF23818C9F0022DDB2 /* Assets.xcassets */,
+				82B1CEF423818C9F0022DDB2 /* LaunchScreen.storyboard */,
+				82F70C462392B151003488AF /* Errors */,
+				828427F92393006E008E02F6 /* External */,
+				828427F52392FF2E008E02F6 /* Models */,
+				82B1CF0B2381E6830022DDB2 /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		82F70C3F2391A886003488AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82B1CEF123818C9F0022DDB2 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82F70C462392B151003488AF /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				82F70C492392B16A003488AF /* VideoliticError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		82F70C4D2392B860003488AF /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				82F70C4E2392B888003488AF /* Services */,
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		82F70C4E2392B888003488AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82F70C512392B8B5003488AF /* AudioProcessorServiceTestsIntegration.swift */,
+				828427F32392ED89008E02F6 /* VideoReaderTestsIntegration.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +367,7 @@
 				82B1CEE223818C9C0022DDB2 /* Sources */,
 				82B1CEE323818C9C0022DDB2 /* Frameworks */,
 				82B1CEE423818C9C0022DDB2 /* Resources */,
+				82F70C43239238D3003488AF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -198,19 +449,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B1CF1523917C5E0022DDB2 /* Bobrowiecka.m4a in Resources */,
+				82F70C4C2392B4D7003488AF /* trump_clintoon.mov in Resources */,
+				8284281B2393251F008E02F6 /* IMG_5441.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82F70C43239238D3003488AF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82B1CEE223818C9C0022DDB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8284281823930C3F008E02F6 /* CNNEmotions.mlmodel in Sources */,
+				82F70C3A23919AFA003488AF /* SpeechRecognitionResult.swift in Sources */,
+				8284281423930C3F008E02F6 /* RaceModel.mlmodel in Sources */,
+				8284280A2393006E008E02F6 /* NonMaxSuppression.swift in Sources */,
+				8284280C2393006E008E02F6 /* FaceCropper.swift in Sources */,
+				828427F82392FF55008E02F6 /* Participiant.swift in Sources */,
+				828428072393006E008E02F6 /* Predictions.swift in Sources */,
+				8284281723930C3F008E02F6 /* RaceModel2.mlmodel in Sources */,
+				828428042393006E008E02F6 /* Math.swift in Sources */,
+				821E383523919351005A28C7 /* SpeechRecognizer.swift in Sources */,
 				82B1CEEA23818C9C0022DDB2 /* AppDelegate.swift in Sources */,
+				82F70C422391A965003488AF /* VideoProcessorService.swift in Sources */,
+				8284280B2393006E008E02F6 /* MLMultiArray+Image.swift in Sources */,
+				8284281623930C3F008E02F6 /* AgeModelUTK.mlmodel in Sources */,
+				8284281523930C3F008E02F6 /* TextPosNegClassifier.mlmodel in Sources */,
+				828428082393006E008E02F6 /* MultiArray.swift in Sources */,
+				82B1CF0E2381E6F70022DDB2 /* AudioProcessorService.swift in Sources */,
+				828428092393006E008E02F6 /* CVPixelBuffer+Helpers.swift in Sources */,
+				8284281923930C3F008E02F6 /* GenderNet.mlmodel in Sources */,
+				828428052393006E008E02F6 /* UIImage+CVPixelBuffer.swift in Sources */,
 				82B1CEEC23818C9C0022DDB2 /* SceneDelegate.swift in Sources */,
+				828428062393006E008E02F6 /* Array.swift in Sources */,
+				82F70C4523924F86003488AF /* VideoReader.swift in Sources */,
 				82B1CEEE23818C9C0022DDB2 /* ContentView.swift in Sources */,
+				82F70C4A2392B16A003488AF /* VideoliticError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +514,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B1CF0123818C9F0022DDB2 /* VideoliticTests.swift in Sources */,
+				821E383D239196E2005A28C7 /* UnitTestErrors.swift in Sources */,
+				82F70C542392BA8B003488AF /* FileManager+ClearTemp.swift in Sources */,
+				82B1CF10238F17BF0022DDB2 /* AudioProcessorServiceTests.swift in Sources */,
+				821E383923919527005A28C7 /* MockSpeechRecognizer.swift in Sources */,
+				82F70C3C23919B82003488AF /* MockSpeechRecognitionResult.swift in Sources */,
+				82F70C522392B8B5003488AF /* AudioProcessorServiceTestsIntegration.swift in Sources */,
+				82F70C38239197CB003488AF /* URL+Resources.swift in Sources */,
+				828427F42392ED89008E02F6 /* VideoReaderTestsIntegration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,8 +665,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Videolitic/Videolitic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Videolitic/Preview Content\"";
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Videolitic/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = XXGHS3R9GA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Videolitic/Info.plist;
@@ -373,6 +678,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.videolitic.Videolitic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,8 +688,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Videolitic/Videolitic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Videolitic/Preview Content\"";
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Videolitic/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = XXGHS3R9GA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Videolitic/Info.plist;
@@ -393,6 +701,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.videolitic.Videolitic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
