@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82627CFE23C383E900672065 /* Videolitic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82627CF423C383E800672065 /* Videolitic.framework */; };
+		82627D0523C383E900672065 /* Videolitic.h in Headers */ = {isa = PBXBuildFile; fileRef = 82627CF723C383E800672065 /* Videolitic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82627D3123C3843100672065 /* RaceModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1223C3843100672065 /* RaceModel.mlmodel */; };
+		82627D3223C3843100672065 /* TextPosNegClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1323C3843100672065 /* TextPosNegClassifier.mlmodel */; };
+		82627D3323C3843100672065 /* AgeModelUTK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1423C3843100672065 /* AgeModelUTK.mlmodel */; };
+		82627D3423C3843100672065 /* RaceModel2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1523C3843100672065 /* RaceModel2.mlmodel */; };
+		82627D3523C3843100672065 /* Emotions.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1623C3843100672065 /* Emotions.mlmodel */; };
+		82627D3623C3843100672065 /* GenderNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1723C3843100672065 /* GenderNet.mlmodel */; };
+		82627D3723C3843100672065 /* Participiant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1A23C3843100672065 /* Participiant.swift */; };
+		82627D3823C3843100672065 /* VideoProcessingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1B23C3843100672065 /* VideoProcessingResult.swift */; };
+		82627D3923C3843100672065 /* VideoParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1C23C3843100672065 /* VideoParticipant.swift */; };
+		82627D3A23C3843100672065 /* SpeechResultWithEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1D23C3843100672065 /* SpeechResultWithEmotion.swift */; };
+		82627D3B23C3843100672065 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1E23C3843100672065 /* Emotion.swift */; };
+		82627D3C23C3843100672065 /* FaceCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2023C3843100672065 /* FaceCropper.swift */; };
+		82627D3D23C3843100672065 /* VideoliticError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2223C3843100672065 /* VideoliticError.swift */; };
+		82627D3E23C3843100672065 /* VideoliticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2423C3843100672065 /* VideoliticService.swift */; };
+		82627D3F23C3843100672065 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2623C3843100672065 /* SpeechRecognizer.swift */; };
+		82627D4023C3843100672065 /* SpeechRecognitionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2723C3843100672065 /* SpeechRecognitionResult.swift */; };
+		82627D4123C3843100672065 /* AudioProcessorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2823C3843100672065 /* AudioProcessorService.swift */; };
+		82627D4223C3843100672065 /* FaceComputingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2A23C3843100672065 /* FaceComputingService.swift */; };
+		82627D4323C3843200672065 /* VideoProcessorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2C23C3843100672065 /* VideoProcessorService.swift */; };
+		82627D4423C3843200672065 /* UIImage+CVPixelBuffer+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2D23C3843100672065 /* UIImage+CVPixelBuffer+Orientation.swift */; };
+		82627D4523C3843200672065 /* VideoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D2F23C3843100672065 /* VideoReader.swift */; };
+		82627D5F23C3843D00672065 /* MockSpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D4823C3843D00672065 /* MockSpeechRecognizer.swift */; };
+		82627D6023C3843D00672065 /* MockFaceComputingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D4923C3843D00672065 /* MockFaceComputingService.swift */; };
+		82627D6123C3843D00672065 /* MockVideoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D4A23C3843D00672065 /* MockVideoReader.swift */; };
+		82627D6223C3843D00672065 /* MockSpeechRecognitionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D4B23C3843D00672065 /* MockSpeechRecognitionResult.swift */; };
+		82627D6323C3843D00672065 /* MockAudioProcessorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D4C23C3843D00672065 /* MockAudioProcessorService.swift */; };
+		82627D6423C3843D00672065 /* VideoReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D5023C3843D00672065 /* VideoReaderTests.swift */; };
+		82627D6523C3843D00672065 /* VideoProcessorServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D5123C3843D00672065 /* VideoProcessorServiceTests.swift */; };
+		82627D6623C3843D00672065 /* FaceComputingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D5223C3843D00672065 /* FaceComputingServiceTests.swift */; };
+		82627D6723C3843D00672065 /* AudioProcessorServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D5323C3843D00672065 /* AudioProcessorServiceTests.swift */; };
+		82627D6823C3843D00672065 /* AudioProcessorServiceTestsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D5623C3843D00672065 /* AudioProcessorServiceTestsIntegration.swift */; };
+		82627D6923C3843D00672065 /* UnitTestErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D5823C3843D00672065 /* UnitTestErrors.swift */; };
+		82627D6A23C3843D00672065 /* URL+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D5A23C3843D00672065 /* URL+Resources.swift */; };
+		82627D6B23C3843D00672065 /* FileManager+ClearTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D5B23C3843D00672065 /* FileManager+ClearTemp.swift */; };
+		82627D6C23C3843D00672065 /* TestRecording.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 82627D5D23C3843D00672065 /* TestRecording.m4a */; };
+		82627D6D23C3843D00672065 /* trump_clintoon.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82627D5E23C3843D00672065 /* trump_clintoon.mov */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82627CFF23C383E900672065 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82627CEB23C383E800672065 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82627CF323C383E800672065;
+			remoteInfo = Videolitic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82627CF423C383E800672065 /* Videolitic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Videolitic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82627CF723C383E800672065 /* Videolitic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Videolitic.h; sourceTree = "<group>"; };
+		82627CF823C383E800672065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82627CFD23C383E900672065 /* VideoliticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoliticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82627D0423C383E900672065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82627D1223C3843100672065 /* RaceModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RaceModel.mlmodel; sourceTree = "<group>"; };
+		82627D1323C3843100672065 /* TextPosNegClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextPosNegClassifier.mlmodel; sourceTree = "<group>"; };
+		82627D1423C3843100672065 /* AgeModelUTK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeModelUTK.mlmodel; sourceTree = "<group>"; };
+		82627D1523C3843100672065 /* RaceModel2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RaceModel2.mlmodel; sourceTree = "<group>"; };
+		82627D1623C3843100672065 /* Emotions.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Emotions.mlmodel; sourceTree = "<group>"; };
+		82627D1723C3843100672065 /* GenderNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderNet.mlmodel; sourceTree = "<group>"; };
+		82627D1A23C3843100672065 /* Participiant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Participiant.swift; sourceTree = "<group>"; };
+		82627D1B23C3843100672065 /* VideoProcessingResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessingResult.swift; sourceTree = "<group>"; };
+		82627D1C23C3843100672065 /* VideoParticipant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoParticipant.swift; sourceTree = "<group>"; };
+		82627D1D23C3843100672065 /* SpeechResultWithEmotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechResultWithEmotion.swift; sourceTree = "<group>"; };
+		82627D1E23C3843100672065 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		82627D2023C3843100672065 /* FaceCropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceCropper.swift; sourceTree = "<group>"; };
+		82627D2223C3843100672065 /* VideoliticError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoliticError.swift; sourceTree = "<group>"; };
+		82627D2423C3843100672065 /* VideoliticService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoliticService.swift; sourceTree = "<group>"; };
+		82627D2623C3843100672065 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		82627D2723C3843100672065 /* SpeechRecognitionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionResult.swift; sourceTree = "<group>"; };
+		82627D2823C3843100672065 /* AudioProcessorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioProcessorService.swift; sourceTree = "<group>"; };
+		82627D2A23C3843100672065 /* FaceComputingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceComputingService.swift; sourceTree = "<group>"; };
+		82627D2C23C3843100672065 /* VideoProcessorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessorService.swift; sourceTree = "<group>"; };
+		82627D2D23C3843100672065 /* UIImage+CVPixelBuffer+Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer+Orientation.swift"; sourceTree = "<group>"; };
+		82627D2F23C3843100672065 /* VideoReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoReader.swift; sourceTree = "<group>"; };
+		82627D4823C3843D00672065 /* MockSpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSpeechRecognizer.swift; sourceTree = "<group>"; };
+		82627D4923C3843D00672065 /* MockFaceComputingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFaceComputingService.swift; sourceTree = "<group>"; };
+		82627D4A23C3843D00672065 /* MockVideoReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockVideoReader.swift; sourceTree = "<group>"; };
+		82627D4B23C3843D00672065 /* MockSpeechRecognitionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSpeechRecognitionResult.swift; sourceTree = "<group>"; };
+		82627D4C23C3843D00672065 /* MockAudioProcessorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAudioProcessorService.swift; sourceTree = "<group>"; };
+		82627D5023C3843D00672065 /* VideoReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoReaderTests.swift; sourceTree = "<group>"; };
+		82627D5123C3843D00672065 /* VideoProcessorServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessorServiceTests.swift; sourceTree = "<group>"; };
+		82627D5223C3843D00672065 /* FaceComputingServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceComputingServiceTests.swift; sourceTree = "<group>"; };
+		82627D5323C3843D00672065 /* AudioProcessorServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioProcessorServiceTests.swift; sourceTree = "<group>"; };
+		82627D5623C3843D00672065 /* AudioProcessorServiceTestsIntegration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioProcessorServiceTestsIntegration.swift; sourceTree = "<group>"; };
+		82627D5823C3843D00672065 /* UnitTestErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestErrors.swift; sourceTree = "<group>"; };
+		82627D5A23C3843D00672065 /* URL+Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Resources.swift"; sourceTree = "<group>"; };
+		82627D5B23C3843D00672065 /* FileManager+ClearTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ClearTemp.swift"; sourceTree = "<group>"; };
+		82627D5D23C3843D00672065 /* TestRecording.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestRecording.m4a; sourceTree = "<group>"; };
+		82627D5E23C3843D00672065 /* trump_clintoon.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = trump_clintoon.mov; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82627CF123C383E800672065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82627CFA23C383E900672065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82627CFE23C383E900672065 /* Videolitic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82627CEA23C383E800672065 = {
+			isa = PBXGroup;
+			children = (
+				82627CF623C383E800672065 /* Videolitic */,
+				82627D0123C383E900672065 /* VideoliticTests */,
+				82627CF523C383E800672065 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82627CF523C383E800672065 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82627CF423C383E800672065 /* Videolitic.framework */,
+				82627CFD23C383E900672065 /* VideoliticTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82627CF623C383E800672065 /* Videolitic */ = {
+			isa = PBXGroup;
+			children = (
+				82627D0E23C3843100672065 /* Resources */,
+				82627D1823C3843100672065 /* Sources */,
+				82627CF723C383E800672065 /* Videolitic.h */,
+				82627CF823C383E800672065 /* Info.plist */,
+			);
+			path = Videolitic;
+			sourceTree = "<group>";
+		};
+		82627D0123C383E900672065 /* VideoliticTests */ = {
+			isa = PBXGroup;
+			children = (
+				82627D5C23C3843D00672065 /* Resources */,
+				82627D4623C3843D00672065 /* Sources */,
+				82627D0423C383E900672065 /* Info.plist */,
+			);
+			path = VideoliticTests;
+			sourceTree = "<group>";
+		};
+		82627D0E23C3843100672065 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82627D1123C3843100672065 /* MLModels */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82627D1123C3843100672065 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				82627D1223C3843100672065 /* RaceModel.mlmodel */,
+				82627D1323C3843100672065 /* TextPosNegClassifier.mlmodel */,
+				82627D1423C3843100672065 /* AgeModelUTK.mlmodel */,
+				82627D1523C3843100672065 /* RaceModel2.mlmodel */,
+				82627D1623C3843100672065 /* Emotions.mlmodel */,
+				82627D1723C3843100672065 /* GenderNet.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+		82627D1823C3843100672065 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				82627D1923C3843100672065 /* Models */,
+				82627D1F23C3843100672065 /* External */,
+				82627D2123C3843100672065 /* Errors */,
+				82627D2323C3843100672065 /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		82627D1923C3843100672065 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82627D1A23C3843100672065 /* Participiant.swift */,
+				82627D1B23C3843100672065 /* VideoProcessingResult.swift */,
+				82627D1C23C3843100672065 /* VideoParticipant.swift */,
+				82627D1D23C3843100672065 /* SpeechResultWithEmotion.swift */,
+				82627D1E23C3843100672065 /* Emotion.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82627D1F23C3843100672065 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				82627D2023C3843100672065 /* FaceCropper.swift */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		82627D2123C3843100672065 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				82627D2223C3843100672065 /* VideoliticError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		82627D2323C3843100672065 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82627D2423C3843100672065 /* VideoliticService.swift */,
+				82627D2523C3843100672065 /* AudioProcessor */,
+				82627D2923C3843100672065 /* FaceComputing */,
+				82627D2B23C3843100672065 /* VideoProcessor */,
+				82627D2E23C3843100672065 /* VideoReader */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82627D2523C3843100672065 /* AudioProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				82627D2623C3843100672065 /* SpeechRecognizer.swift */,
+				82627D2723C3843100672065 /* SpeechRecognitionResult.swift */,
+				82627D2823C3843100672065 /* AudioProcessorService.swift */,
+			);
+			path = AudioProcessor;
+			sourceTree = "<group>";
+		};
+		82627D2923C3843100672065 /* FaceComputing */ = {
+			isa = PBXGroup;
+			children = (
+				82627D2A23C3843100672065 /* FaceComputingService.swift */,
+			);
+			path = FaceComputing;
+			sourceTree = "<group>";
+		};
+		82627D2B23C3843100672065 /* VideoProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				82627D2C23C3843100672065 /* VideoProcessorService.swift */,
+				82627D2D23C3843100672065 /* UIImage+CVPixelBuffer+Orientation.swift */,
+			);
+			path = VideoProcessor;
+			sourceTree = "<group>";
+		};
+		82627D2E23C3843100672065 /* VideoReader */ = {
+			isa = PBXGroup;
+			children = (
+				82627D2F23C3843100672065 /* VideoReader.swift */,
+			);
+			path = VideoReader;
+			sourceTree = "<group>";
+		};
+		82627D4623C3843D00672065 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				82627D4723C3843D00672065 /* Mocks */,
+				82627D4D23C3843D00672065 /* Tests */,
+				82627D5723C3843D00672065 /* Errors */,
+				82627D5923C3843D00672065 /* Helpers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		82627D4723C3843D00672065 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				82627D4823C3843D00672065 /* MockSpeechRecognizer.swift */,
+				82627D4923C3843D00672065 /* MockFaceComputingService.swift */,
+				82627D4A23C3843D00672065 /* MockVideoReader.swift */,
+				82627D4B23C3843D00672065 /* MockSpeechRecognitionResult.swift */,
+				82627D4C23C3843D00672065 /* MockAudioProcessorService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		82627D4D23C3843D00672065 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				82627D4E23C3843D00672065 /* UnitTests */,
+				82627D5423C3843D00672065 /* IntegrationTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		82627D4E23C3843D00672065 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				82627D4F23C3843D00672065 /* Services */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		82627D4F23C3843D00672065 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82627D5023C3843D00672065 /* VideoReaderTests.swift */,
+				82627D5123C3843D00672065 /* VideoProcessorServiceTests.swift */,
+				82627D5223C3843D00672065 /* FaceComputingServiceTests.swift */,
+				82627D5323C3843D00672065 /* AudioProcessorServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82627D5423C3843D00672065 /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				82627D5523C3843D00672065 /* Services */,
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		82627D5523C3843D00672065 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82627D5623C3843D00672065 /* AudioProcessorServiceTestsIntegration.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82627D5723C3843D00672065 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				82627D5823C3843D00672065 /* UnitTestErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		82627D5923C3843D00672065 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				82627D5A23C3843D00672065 /* URL+Resources.swift */,
+				82627D5B23C3843D00672065 /* FileManager+ClearTemp.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		82627D5C23C3843D00672065 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82627D5D23C3843D00672065 /* TestRecording.m4a */,
+				82627D5E23C3843D00672065 /* trump_clintoon.mov */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		82627CEF23C383E800672065 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82627D0523C383E900672065 /* Videolitic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		82627CF323C383E800672065 /* Videolitic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82627D0823C383E900672065 /* Build configuration list for PBXNativeTarget "Videolitic" */;
+			buildPhases = (
+				82627CEF23C383E800672065 /* Headers */,
+				82627CF023C383E800672065 /* Sources */,
+				82627CF123C383E800672065 /* Frameworks */,
+				82627CF223C383E800672065 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Videolitic;
+			productName = Videolitic;
+			productReference = 82627CF423C383E800672065 /* Videolitic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		82627CFC23C383E900672065 /* VideoliticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82627D0B23C383E900672065 /* Build configuration list for PBXNativeTarget "VideoliticTests" */;
+			buildPhases = (
+				82627CF923C383E900672065 /* Sources */,
+				82627CFA23C383E900672065 /* Frameworks */,
+				82627CFB23C383E900672065 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82627D0023C383E900672065 /* PBXTargetDependency */,
+			);
+			name = VideoliticTests;
+			productName = VideoliticTests;
+			productReference = 82627CFD23C383E900672065 /* VideoliticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82627CEB23C383E800672065 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Michał Rogowski";
+				TargetAttributes = {
+					82627CF323C383E800672065 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					82627CFC23C383E900672065 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 82627CEE23C383E800672065 /* Build configuration list for PBXProject "Videolitic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82627CEA23C383E800672065;
+			productRefGroup = 82627CF523C383E800672065 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82627CF323C383E800672065 /* Videolitic */,
+				82627CFC23C383E900672065 /* VideoliticTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82627CF223C383E800672065 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82627CFB23C383E900672065 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82627D6C23C3843D00672065 /* TestRecording.m4a in Resources */,
+				82627D6D23C3843D00672065 /* trump_clintoon.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82627CF023C383E800672065 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82627D4023C3843100672065 /* SpeechRecognitionResult.swift in Sources */,
+				82627D3423C3843100672065 /* RaceModel2.mlmodel in Sources */,
+				82627D3823C3843100672065 /* VideoProcessingResult.swift in Sources */,
+				82627D3D23C3843100672065 /* VideoliticError.swift in Sources */,
+				82627D4323C3843200672065 /* VideoProcessorService.swift in Sources */,
+				82627D3A23C3843100672065 /* SpeechResultWithEmotion.swift in Sources */,
+				82627D4423C3843200672065 /* UIImage+CVPixelBuffer+Orientation.swift in Sources */,
+				82627D3523C3843100672065 /* Emotions.mlmodel in Sources */,
+				82627D3F23C3843100672065 /* SpeechRecognizer.swift in Sources */,
+				82627D3223C3843100672065 /* TextPosNegClassifier.mlmodel in Sources */,
+				82627D3623C3843100672065 /* GenderNet.mlmodel in Sources */,
+				82627D4223C3843100672065 /* FaceComputingService.swift in Sources */,
+				82627D3123C3843100672065 /* RaceModel.mlmodel in Sources */,
+				82627D4523C3843200672065 /* VideoReader.swift in Sources */,
+				82627D4123C3843100672065 /* AudioProcessorService.swift in Sources */,
+				82627D3923C3843100672065 /* VideoParticipant.swift in Sources */,
+				82627D3E23C3843100672065 /* VideoliticService.swift in Sources */,
+				82627D3323C3843100672065 /* AgeModelUTK.mlmodel in Sources */,
+				82627D3723C3843100672065 /* Participiant.swift in Sources */,
+				82627D3C23C3843100672065 /* FaceCropper.swift in Sources */,
+				82627D3B23C3843100672065 /* Emotion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82627CF923C383E900672065 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82627D6823C3843D00672065 /* AudioProcessorServiceTestsIntegration.swift in Sources */,
+				82627D6B23C3843D00672065 /* FileManager+ClearTemp.swift in Sources */,
+				82627D6423C3843D00672065 /* VideoReaderTests.swift in Sources */,
+				82627D6323C3843D00672065 /* MockAudioProcessorService.swift in Sources */,
+				82627D6123C3843D00672065 /* MockVideoReader.swift in Sources */,
+				82627D6723C3843D00672065 /* AudioProcessorServiceTests.swift in Sources */,
+				82627D6623C3843D00672065 /* FaceComputingServiceTests.swift in Sources */,
+				82627D6523C3843D00672065 /* VideoProcessorServiceTests.swift in Sources */,
+				82627D6923C3843D00672065 /* UnitTestErrors.swift in Sources */,
+				82627D5F23C3843D00672065 /* MockSpeechRecognizer.swift in Sources */,
+				82627D6223C3843D00672065 /* MockSpeechRecognitionResult.swift in Sources */,
+				82627D6023C3843D00672065 /* MockFaceComputingService.swift in Sources */,
+				82627D6A23C3843D00672065 /* URL+Resources.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82627D0023C383E900672065 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82627CF323C383E800672065 /* Videolitic */;
+			targetProxy = 82627CFF23C383E900672065 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		82627D0623C383E900672065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		82627D0723C383E900672065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82627D0923C383E900672065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7KRMA2Y5X6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Videolitic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.videolitic.Videolitic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82627D0A23C383E900672065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7KRMA2Y5X6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Videolitic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.videolitic.Videolitic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82627D0C23C383E900672065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXGHS3R9GA;
+				INFOPLIST_FILE = VideoliticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.videolitic.VideoliticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82627D0D23C383E900672065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXGHS3R9GA;
+				INFOPLIST_FILE = VideoliticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.videolitic.VideoliticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82627CEE23C383E800672065 /* Build configuration list for PBXProject "Videolitic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82627D0623C383E900672065 /* Debug */,
+				82627D0723C383E900672065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82627D0823C383E900672065 /* Build configuration list for PBXNativeTarget "Videolitic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82627D0923C383E900672065 /* Debug */,
+				82627D0A23C383E900672065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82627D0B23C383E900672065 /* Build configuration list for PBXNativeTarget "VideoliticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82627D0C23C383E900672065 /* Debug */,
+				82627D0D23C383E900672065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82627CEB23C383E800672065 /* Project object */;
+}
