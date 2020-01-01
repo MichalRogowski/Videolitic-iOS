@@ -27,7 +27,6 @@
 		8284281623930C3F008E02F6 /* AgeModelUTK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8284281023930C3F008E02F6 /* AgeModelUTK.mlmodel */; };
 		8284281723930C3F008E02F6 /* RaceModel2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8284281123930C3F008E02F6 /* RaceModel2.mlmodel */; };
 		8284281923930C3F008E02F6 /* GenderNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8284281323930C3F008E02F6 /* GenderNet.mlmodel */; };
-		8284281B2393251F008E02F6 /* IMG_5441.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8284281A2393251F008E02F6 /* IMG_5441.mov */; };
 		82B1CEEA23818C9C0022DDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1CEE923818C9C0022DDB2 /* AppDelegate.swift */; };
 		82B1CEEC23818C9C0022DDB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1CEEB23818C9C0022DDB2 /* SceneDelegate.swift */; };
 		82B1CEEE23818C9C0022DDB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1CEED23818C9C0022DDB2 /* ContentView.swift */; };
@@ -79,7 +78,6 @@
 		8284281023930C3F008E02F6 /* AgeModelUTK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeModelUTK.mlmodel; sourceTree = "<group>"; };
 		8284281123930C3F008E02F6 /* RaceModel2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RaceModel2.mlmodel; sourceTree = "<group>"; };
 		8284281323930C3F008E02F6 /* GenderNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderNet.mlmodel; sourceTree = "<group>"; };
-		8284281A2393251F008E02F6 /* IMG_5441.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_5441.mov; sourceTree = "<group>"; };
 		82B1CEE623818C9C0022DDB2 /* Videolitic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Videolitic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B1CEE923818C9C0022DDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82B1CEEB23818C9C0022DDB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -282,7 +280,6 @@
 		82B1CF13238F1D030022DDB2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8284281A2393251F008E02F6 /* IMG_5441.mov */,
 				82F70C4B2392B4D7003488AF /* trump_clintoon.mov */,
 				82B1CF1423917C5E0022DDB2 /* Bobrowiecka.m4a */,
 			);
@@ -451,7 +448,6 @@
 			files = (
 				82B1CF1523917C5E0022DDB2 /* Bobrowiecka.m4a in Resources */,
 				82F70C4C2392B4D7003488AF /* trump_clintoon.mov in Resources */,
-				8284281B2393251F008E02F6 /* IMG_5441.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
