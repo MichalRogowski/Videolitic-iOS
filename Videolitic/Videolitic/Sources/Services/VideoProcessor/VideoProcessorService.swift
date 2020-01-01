@@ -50,7 +50,7 @@ final class VideoProcessorService: VideoProcessorServiceInterface {
         self.audioProcessor = audioProcessor
         self.videoReader = videoReader
         self.ageModel = try VNCoreMLModel(for: AgeModelUTK().model)
-        self.emotionsModel = try VNCoreMLModel(for: CNNEmotions().model)
+        self.emotionsModel = try VNCoreMLModel(for: Emotions().model)
         self.genderModel = try VNCoreMLModel(for: GenderNet().model)
         self.raceModel = try VNCoreMLModel(for: RaceModel().model)
     }
