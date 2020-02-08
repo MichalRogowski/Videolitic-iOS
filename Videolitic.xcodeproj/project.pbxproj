@@ -11,8 +11,7 @@
 		82627D0523C383E900672065 /* Videolitic.h in Headers */ = {isa = PBXBuildFile; fileRef = 82627CF723C383E800672065 /* Videolitic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82627D3123C3843100672065 /* RaceModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1223C3843100672065 /* RaceModel.mlmodel */; };
 		82627D3223C3843100672065 /* TextPosNegClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1323C3843100672065 /* TextPosNegClassifier.mlmodel */; };
-		82627D3323C3843100672065 /* AgeModelUTK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1423C3843100672065 /* AgeModelUTK.mlmodel */; };
-		82627D3423C3843100672065 /* RaceModel2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1523C3843100672065 /* RaceModel2.mlmodel */; };
+		82627D3323C3843100672065 /* AgeModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1423C3843100672065 /* AgeModel.mlmodel */; };
 		82627D3523C3843100672065 /* Emotions.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1623C3843100672065 /* Emotions.mlmodel */; };
 		82627D3623C3843100672065 /* GenderNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1723C3843100672065 /* GenderNet.mlmodel */; };
 		82627D3723C3843100672065 /* Participiant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82627D1A23C3843100672065 /* Participiant.swift */; };
@@ -65,8 +64,7 @@
 		82627D0423C383E900672065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82627D1223C3843100672065 /* RaceModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RaceModel.mlmodel; sourceTree = "<group>"; };
 		82627D1323C3843100672065 /* TextPosNegClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextPosNegClassifier.mlmodel; sourceTree = "<group>"; };
-		82627D1423C3843100672065 /* AgeModelUTK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeModelUTK.mlmodel; sourceTree = "<group>"; };
-		82627D1523C3843100672065 /* RaceModel2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RaceModel2.mlmodel; sourceTree = "<group>"; };
+		82627D1423C3843100672065 /* AgeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeModel.mlmodel; sourceTree = "<group>"; };
 		82627D1623C3843100672065 /* Emotions.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Emotions.mlmodel; sourceTree = "<group>"; };
 		82627D1723C3843100672065 /* GenderNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderNet.mlmodel; sourceTree = "<group>"; };
 		82627D1A23C3843100672065 /* Participiant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Participiant.swift; sourceTree = "<group>"; };
@@ -172,8 +170,7 @@
 			children = (
 				82627D1223C3843100672065 /* RaceModel.mlmodel */,
 				82627D1323C3843100672065 /* TextPosNegClassifier.mlmodel */,
-				82627D1423C3843100672065 /* AgeModelUTK.mlmodel */,
-				82627D1523C3843100672065 /* RaceModel2.mlmodel */,
+				82627D1423C3843100672065 /* AgeModel.mlmodel */,
 				82627D1623C3843100672065 /* Emotions.mlmodel */,
 				82627D1723C3843100672065 /* GenderNet.mlmodel */,
 			);
@@ -471,7 +468,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				82627D4023C3843100672065 /* SpeechRecognitionResult.swift in Sources */,
-				82627D3423C3843100672065 /* RaceModel2.mlmodel in Sources */,
 				82627D3823C3843100672065 /* VideoProcessingResult.swift in Sources */,
 				82627D3D23C3843100672065 /* VideoliticError.swift in Sources */,
 				82627D4323C3843200672065 /* VideoProcessorService.swift in Sources */,
@@ -487,7 +483,7 @@
 				82627D4123C3843100672065 /* AudioProcessorService.swift in Sources */,
 				82627D3923C3843100672065 /* VideoParticipant.swift in Sources */,
 				82627D3E23C3843100672065 /* VideoliticService.swift in Sources */,
-				82627D3323C3843100672065 /* AgeModelUTK.mlmodel in Sources */,
+				82627D3323C3843100672065 /* AgeModel.mlmodel in Sources */,
 				82627D3723C3843100672065 /* Participiant.swift in Sources */,
 				82627D3C23C3843100672065 /* FaceCropper.swift in Sources */,
 				82627D3B23C3843100672065 /* Emotion.swift in Sources */,

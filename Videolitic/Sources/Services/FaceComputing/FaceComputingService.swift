@@ -29,7 +29,7 @@ final class FaceComputingService: FaceComputingServiceInterface {
     // MARK: Initialisation
 
     init() throws {
-        ageModel = try VNCoreMLModel(for: AgeModelUTK().model)
+        ageModel = try VNCoreMLModel(for: AgeModel().model)
         emotionsModel = try VNCoreMLModel(for: Emotions().model)
         genderModel = try VNCoreMLModel(for: GenderNet().model)
         raceModel = try VNCoreMLModel(for: RaceModel().model)
