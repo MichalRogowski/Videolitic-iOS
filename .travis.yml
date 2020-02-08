@@ -1,4 +1,5 @@
 language: swift
+osx_image: xcode11.3
 xcode_project: Videolitic.xcodeproj # path to your xcodeproj folder
-xcode_scheme: VideoliticTests
+xcode_scheme: Videolitic
 xcode_destination: platform=iOS Simulator,OS=13.3,name=iPad Pro (9.7-inch)
