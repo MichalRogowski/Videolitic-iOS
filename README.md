@@ -2,11 +2,12 @@
 
 ### ⭐️ Star me on GitHub — it helps!
 
+
+Videolitic is an on-device video analysis framework. We are tracking each person from the video and detect  his or her age, emotions and ethnicity, we are also creating transcript of video.  All results are combined and time-based.
+
 ![Demo](https://i.imgur.com/H879dfK.png)
 ![Demo2](https://i.imgur.com/UCj0g9b.png)
 ![](demo.gif)
-
-Videolitic is an on-device video analysis framework. We are tracking each person from the video and detect  his or her age, emotions and ethnicity, we are also creating transcript of video.  All results are combined and time-based.
 
 Right now results are not super accurate because of bad models. I can’t publish models I’ve created because of license.
 
